@@ -12,6 +12,8 @@
 
     // Requisito 04
 
+    // Requisito 05
+
     internal class Program
         {
     static void Main(string[] args)
@@ -31,12 +33,13 @@
         {
 
             Console.Clear();
-            Console.WriteLine(" Calculadora 2024");
+            Console.WriteLine(" Calculadora 2024\n");
+
 
             Console.WriteLine("Digite 1 para Adicionar");
             Console.WriteLine("Digite 2 para Subtrair");
             Console.WriteLine("Digite 3 para Multiplicar");
-         
+            Console.WriteLine("Digite 4 para dividir");
            
             Console.WriteLine("Digite S para sair");
 
@@ -87,6 +90,10 @@
 
             }
 
+            else if(operação == "4")
+            {
+                resultado = primeiroNumero / segundoNumero;
+            }
 
 
             Console.WriteLine(" O resultado é: " + resultado);
