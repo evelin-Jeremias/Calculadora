@@ -14,6 +14,8 @@
 
     // Requisito 05
 
+    // Requisito 06
+
     internal class Program
         {
     static void Main(string[] args)
@@ -92,7 +94,23 @@
 
             else if(operação == "4")
             {
-                resultado = primeiroNumero / segundoNumero;
+                //checar se o segundo número é 0
+                while (segundoNumero == 0)
+                {
+                    //caso seja 0, pedir para o usuario digitar de novo
+                        Console.WriteLine("segundo número não pode ser Zero, tente novemente");
+
+                        Console.ReadLine();
+
+                        Console.WriteLine("Digite o segundo número novamente: ");
+
+                         segundoNumero = Convert.ToInt32(Console.ReadLine());
+                }
+
+
+                    //caso não, dividir
+
+                     resultado = primeiroNumero / segundoNumero;
             }
 
 
