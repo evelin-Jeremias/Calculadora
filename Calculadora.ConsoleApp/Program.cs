@@ -36,9 +36,8 @@
             Console.WriteLine("Digite 1 para Adicionar");
             Console.WriteLine("Digite 2 para Subtrair");
             Console.WriteLine("Digite 3 para Multiplicar");
-            Console.WriteLine("Digite 4 para Dividir");
-            Console.WriteLine("Digite 5 para para 0");
-            Console.WriteLine("Digite M para acessar Menu");
+         
+           
             Console.WriteLine("Digite S para sair");
 
             string operação = Console.ReadLine();
@@ -80,49 +79,15 @@
 
             }
 
-
-
-            Console.WriteLine(" Digite o terceiro Numero:");
-
-
-            string terceiroNumeroString = Console.ReadLine();
-
-            int terceiroNumero = Convert.ToInt32(terceiroNumeroString);
-
             
-
-            if (operação == "2")
-            {
-                resultado = segundoNumero + terceiroNumero;
-            }
             else if (operação == "3")
             {
-                resultado = segundoNumero + terceiroNumero; 
+                resultado = primeiroNumero * segundoNumero;
 
 
             }
 
 
-
-            Console.WriteLine(" Digite o Quarto Numero:");
-
-
-            string quartoNumeroString = Console.ReadLine();
-
-            int quartoNumero = Convert.ToInt32(quartoNumeroString);
-
-
-
-            if (operação == "3")
-            {
-                resultado = terceiroNumero + quartoNumero;
-            }
-            else if (operação == "4")
-            {
-                resultado = terceiroNumero + quartoNumero;
-
-
-            }
 
             Console.WriteLine(" O resultado é: " + resultado);
 
