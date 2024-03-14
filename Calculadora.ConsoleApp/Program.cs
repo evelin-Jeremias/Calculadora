@@ -16,6 +16,8 @@
 
     // Requisito 06
 
+    //Requisito 07
+
     internal class Program
         {
     static void Main(string[] args)
@@ -47,9 +49,21 @@
 
             string operação = Console.ReadLine();
 
-            if (operação == "S")
+            // || = comparação não obrigatória (só precisa ser verdadeiro)
+            if (operação == "S" || operação == "s")
                 break;
 
+            // && comparação obrigatória 
+
+            if (operação != "1" && operação != "2" && operação != "3" && operação != "4" && operação != "S" && operação != "s")
+            {
+                Console.WriteLine("Operação invalida, tente novamente...");
+                Console.ReadLine();
+
+                continue;
+            }
+
+               
 
             Console.WriteLine("Digite o primeiro numero:");
 
@@ -61,7 +75,7 @@
             // Atribuição - Passar para a variavel
             primeiroNumeroString = Console.ReadLine();
 
-            int primeiroNumero = Convert.ToInt32(primeiroNumeroString);
+            double primeiroNumero = Convert.ToDouble(primeiroNumeroString);
 
 
             Console.WriteLine(" Digite o segundo Numero:");
@@ -69,9 +83,9 @@
 
             string segundoNumeroString = Console.ReadLine();
 
-            int segundoNumero = Convert.ToInt32(segundoNumeroString);
+            double segundoNumero = Convert.ToDouble(segundoNumeroString);
 
-            int resultado = 0;
+            double resultado = 0;
 
             if (operação == "1")
             {
